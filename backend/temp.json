@@ -1,0 +1,956 @@
+{
+  "course": {
+    "id": "ja-for-en",
+    "learningLanguage": "Japanese",
+    "baseLanguage": "English",
+    "ttsLang": "ja-JP",
+    "xpPerLesson": 10,
+    "maxHearts": 5,
+    "script": "kana",
+    "normalize": {
+      "lowercase": true,
+      "stripAccents": false,
+      "removeSpaces": true,
+      "stripPunctuation": [
+        "。",
+        "、",
+        "？",
+        "！",
+        ".",
+        ",",
+        "?",
+        "!"
+      ],
+      "acceptRomaji": true
+    }
+  },
+  "glossary": {
+    "りんご": "ri n go",
+    "みず": "mi zu",
+    "パン": "pa n",
+    "ぎゅうにゅう": "gyuu nyuu",
+    "これ": "ko re",
+    "は": "wa",
+    "を": "o",
+    "です": "de su",
+    "これはりんごです。": "ko re wa ri n go de su.",
+    "みずです。": "mi zu de su.",
+    "わたし": "wa ta shi",
+    "あなた": "a na ta",
+    "たべます": "ta be ma su",
+    "のみます": "no mi ma su",
+    "わたしはパンをたべます。": "wa ta shi wa pa n o ta be ma su.",
+    "わたしはみずをのみます。": "wa ta shi wa mi zu o no mi ma su.",
+    "わたしはりんごをたべます": "wa ta shi wa ri n go o ta be ma su",
+    "あなたはパンをたべます。": "a na ta wa pa n o ta be ma su.",
+    "あなたはりんごをたべます。": "a na ta wa ri n go o ta be ma su.",
+    "こんにちは": "ko n ni chi wa",
+    "さようなら": "sa yo u na ra",
+    "ありがとう": "a ri ga to u",
+    "おやすみ": "o ya su mi",
+    "おはよう": "o ha yo u",
+    "ございます": "go za i ma su",
+    "おはようございます": "o ha yo u go za i ma su",
+    "ありがとうございます": "a ri ga to u go za i ma su",
+    "はい": "ha i",
+    "いいえ": "i i e",
+    "たまご": "ta ma go",
+    "おちゃ": "o cha",
+    "ごはん": "go ha n",
+    "さかな": "sa ka na",
+    "コーヒー": "ko o hi i",
+    "わたしはおちゃをのみます。": "wa ta shi wa o cha o no mi ma su.",
+    "あなたはさかなをたべます。": "a na ta wa sa ka na o ta be ma su.",
+    "わたしはたまごをたべます。": "wa ta shi wa ta ma go o ta be ma su.",
+    "あなたはおちゃをのみます。": "a na ta wa o cha o no mi ma su.",
+    "おかあさん": "o ka a sa n",
+    "おとうさん": "o to u sa n",
+    "おとこのこ": "o to ko no ko",
+    "おんなのこ": "o n na no ko",
+    "ともだち": "to mo da chi",
+    "おとこのこはパンをたべます。": "o to ko no ko wa pa n o ta be ma su.",
+    "おんなのこはみずをのみます。": "o n na no ko wa mi zu o no mi ma su.",
+    "おかあさんはおちゃをのみます。": "o ka a sa n wa o cha o no mi ma su.",
+    "おとうさんはごはんをたべます。": "o to u sa n wa go ha n o ta be ma su."
+  },
+  "lessons": [
+    {
+      "id": "ja-basics-1",
+      "unit": 1,
+      "order": 1,
+      "title": "Basics 1",
+      "description": "Food and drink words",
+      "icon": "🍎",
+      "questions": [
+        {
+          "id": "jb1q1",
+          "type": "select_image",
+          "prompt": "Which one is \"りんご\"?",
+          "options": [
+            {
+              "emoji": "🍎",
+              "label": "apple"
+            },
+            {
+              "emoji": "🍞",
+              "label": "bread"
+            },
+            {
+              "emoji": "🥛",
+              "label": "milk"
+            },
+            {
+              "emoji": "💧",
+              "label": "water"
+            }
+          ],
+          "answer": "apple"
+        },
+        {
+          "id": "jb1q2",
+          "type": "select_image",
+          "prompt": "Which one is \"みず\"?",
+          "options": [
+            {
+              "emoji": "🥛",
+              "label": "milk"
+            },
+            {
+              "emoji": "💧",
+              "label": "water"
+            },
+            {
+              "emoji": "🍎",
+              "label": "apple"
+            },
+            {
+              "emoji": "🍞",
+              "label": "bread"
+            }
+          ],
+          "answer": "water"
+        },
+        {
+          "id": "jb1q3",
+          "type": "select_meaning",
+          "prompt": "How do you say \"bread\"?",
+          "options": [
+            "ぎゅうにゅう",
+            "パン",
+            "みず",
+            "りんご"
+          ],
+          "answer": "パン"
+        },
+        {
+          "id": "jb1q4",
+          "type": "match_pairs",
+          "prompt": "Tap the matching pairs",
+          "pairs": [
+            {
+              "left": "りんご",
+              "right": "apple"
+            },
+            {
+              "left": "パン",
+              "right": "bread"
+            },
+            {
+              "left": "ぎゅうにゅう",
+              "right": "milk"
+            },
+            {
+              "left": "みず",
+              "right": "water"
+            }
+          ]
+        },
+        {
+          "id": "jb1q5",
+          "type": "translate_wordbank",
+          "direction": "to_target",
+          "prompt": "Translate this sentence",
+          "source": "This is an apple.",
+          "wordBank": [
+            "これ",
+            "は",
+            "りんご",
+            "です",
+            "みず",
+            "パン"
+          ],
+          "answer": "これはりんごです。",
+          "acceptedAnswers": [
+            "これはりんごです。",
+            "りんごです。"
+          ]
+        },
+        {
+          "id": "jb1q6",
+          "type": "listen_type",
+          "prompt": "Type what you hear",
+          "audioText": "みず",
+          "answer": "みず",
+          "acceptedAnswers": [
+            "みず",
+            "mizu"
+          ]
+        },
+        {
+          "id": "jb1q7",
+          "type": "fill_blank",
+          "prompt": "Complete the sentence",
+          "context": "This is bread.",
+          "sentence": "これは___です。",
+          "sentenceRomaji": "kore wa ___ desu.",
+          "options": [
+            "パン",
+            "みず",
+            "りんご"
+          ],
+          "answer": "パン"
+        },
+        {
+          "id": "jb1q8",
+          "type": "translate_wordbank",
+          "direction": "to_source",
+          "prompt": "Translate this sentence",
+          "source": "みずです。",
+          "wordBank": [
+            "It",
+            "is",
+            "water",
+            "apple",
+            "bread",
+            "milk"
+          ],
+          "answer": "It is water",
+          "acceptedAnswers": [
+            "It is water",
+            "It's water",
+            "This is water"
+          ]
+        },
+        {
+          "id": "jb1q9",
+          "type": "type_answer",
+          "direction": "to_target",
+          "prompt": "Write \"milk\" in Japanese",
+          "source": "milk",
+          "answer": "ぎゅうにゅう",
+          "acceptedAnswers": [
+            "ぎゅうにゅう",
+            "gyuunyuu",
+            "gyunyu",
+            "gyuunyu"
+          ]
+        },
+        {
+          "id": "jb1q10",
+          "type": "select_meaning",
+          "prompt": "What does \"ぎゅうにゅう\" mean?",
+          "options": [
+            "milk",
+            "water",
+            "bread",
+            "apple"
+          ],
+          "answer": "milk"
+        }
+      ]
+    },
+    {
+      "id": "ja-basics-2",
+      "unit": 1,
+      "order": 2,
+      "title": "Basics 2",
+      "description": "I, you, eat and drink",
+      "icon": "🍽️",
+      "questions": [
+        {
+          "id": "jb2q1",
+          "type": "select_meaning",
+          "prompt": "What does \"わたし\" mean?",
+          "options": [
+            "I",
+            "you",
+            "he",
+            "she"
+          ],
+          "answer": "I"
+        },
+        {
+          "id": "jb2q2",
+          "type": "select_meaning",
+          "prompt": "What does \"たべます\" mean?",
+          "options": [
+            "drink",
+            "eat",
+            "sleep",
+            "read"
+          ],
+          "answer": "eat"
+        },
+        {
+          "id": "jb2q3",
+          "type": "match_pairs",
+          "prompt": "Tap the matching pairs",
+          "pairs": [
+            {
+              "left": "わたし",
+              "right": "I"
+            },
+            {
+              "left": "あなた",
+              "right": "you"
+            },
+            {
+              "left": "たべます",
+              "right": "eat"
+            },
+            {
+              "left": "のみます",
+              "right": "drink"
+            }
+          ]
+        },
+        {
+          "id": "jb2q4",
+          "type": "translate_wordbank",
+          "direction": "to_target",
+          "prompt": "Translate this sentence",
+          "source": "I eat bread.",
+          "wordBank": [
+            "わたし",
+            "は",
+            "パン",
+            "を",
+            "たべます",
+            "のみます",
+            "みず"
+          ],
+          "answer": "わたしはパンをたべます。",
+          "acceptedAnswers": [
+            "わたしはパンをたべます。",
+            "パンをたべます。"
+          ]
+        },
+        {
+          "id": "jb2q5",
+          "type": "translate_wordbank",
+          "direction": "to_source",
+          "prompt": "Translate this sentence",
+          "source": "わたしはみずをのみます。",
+          "wordBank": [
+            "I",
+            "drink",
+            "eat",
+            "water",
+            "milk",
+            "you"
+          ],
+          "answer": "I drink water",
+          "acceptedAnswers": [
+            "I drink water"
+          ]
+        },
+        {
+          "id": "jb2q6",
+          "type": "listen_type",
+          "prompt": "Type what you hear",
+          "audioText": "わたしはりんごをたべます",
+          "answer": "わたしはりんごをたべます",
+          "acceptedAnswers": [
+            "わたしはりんごをたべます",
+            "watashiwaringootabemasu",
+            "watashiwaringowotabemasu"
+          ]
+        },
+        {
+          "id": "jb2q7",
+          "type": "fill_blank",
+          "prompt": "Complete the sentence",
+          "context": "I drink milk.",
+          "sentence": "わたしはぎゅうにゅうを___。",
+          "sentenceRomaji": "watashi wa gyuunyuu o ___.",
+          "options": [
+            "のみます",
+            "たべます",
+            "です"
+          ],
+          "answer": "のみます"
+        },
+        {
+          "id": "jb2q8",
+          "type": "select_meaning",
+          "prompt": "What does \"あなたはパンをたべます。\" mean?",
+          "options": [
+            "You eat bread.",
+            "I eat bread.",
+            "You drink bread.",
+            "I drink water."
+          ],
+          "answer": "You eat bread."
+        },
+        {
+          "id": "jb2q9",
+          "type": "type_answer",
+          "direction": "to_target",
+          "prompt": "Write this in Japanese",
+          "source": "I drink water.",
+          "answer": "わたしはみずをのみます。",
+          "acceptedAnswers": [
+            "わたしはみずをのみます。",
+            "みずをのみます。",
+            "watashiwamizuonomimasu",
+            "watashiwamizuwonomimasu",
+            "mizuonomimasu",
+            "mizuwonomimasu"
+          ]
+        },
+        {
+          "id": "jb2q10",
+          "type": "translate_wordbank",
+          "direction": "to_source",
+          "prompt": "Translate this sentence",
+          "source": "あなたはりんごをたべます。",
+          "wordBank": [
+            "You",
+            "eat",
+            "an",
+            "apple",
+            "drink",
+            "I"
+          ],
+          "answer": "You eat an apple",
+          "acceptedAnswers": [
+            "You eat an apple",
+            "You eat apples",
+            "You eat apple"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ja-greetings",
+      "unit": 1,
+      "order": 3,
+      "title": "Greetings",
+      "description": "Say hello and be polite",
+      "icon": "👋",
+      "questions": [
+        {
+          "id": "jg1q1",
+          "type": "select_meaning",
+          "prompt": "What does \"こんにちは\" mean?",
+          "options": [
+            "hello",
+            "goodbye",
+            "good night",
+            "thanks"
+          ],
+          "answer": "hello"
+        },
+        {
+          "id": "jg1q2",
+          "type": "select_meaning",
+          "prompt": "How do you say \"thank you\"?",
+          "options": [
+            "さようなら",
+            "おやすみ",
+            "ありがとう",
+            "こんにちは"
+          ],
+          "answer": "ありがとう"
+        },
+        {
+          "id": "jg1q3",
+          "type": "match_pairs",
+          "prompt": "Tap the matching pairs",
+          "pairs": [
+            {
+              "left": "こんにちは",
+              "right": "hello"
+            },
+            {
+              "left": "さようなら",
+              "right": "goodbye"
+            },
+            {
+              "left": "ありがとう",
+              "right": "thank you"
+            },
+            {
+              "left": "おやすみ",
+              "right": "good night"
+            }
+          ]
+        },
+        {
+          "id": "jg1q4",
+          "type": "translate_wordbank",
+          "direction": "to_target",
+          "prompt": "Translate this sentence",
+          "source": "Good morning.",
+          "wordBank": [
+            "おはよう",
+            "ございます",
+            "おやすみ",
+            "こんにちは",
+            "さようなら"
+          ],
+          "answer": "おはようございます",
+          "acceptedAnswers": [
+            "おはようございます",
+            "おはよう",
+            "ohayougozaimasu",
+            "ohayou"
+          ]
+        },
+        {
+          "id": "jg1q5",
+          "type": "listen_type",
+          "prompt": "Type what you hear",
+          "audioText": "こんにちは",
+          "answer": "こんにちは",
+          "acceptedAnswers": [
+            "こんにちは",
+            "konnichiwa",
+            "konnichiha"
+          ]
+        },
+        {
+          "id": "jg1q6",
+          "type": "fill_blank",
+          "prompt": "Complete the sentence",
+          "context": "Yes, it's an apple.",
+          "sentence": "___、りんごです。",
+          "sentenceRomaji": "___, ringo desu.",
+          "options": [
+            "はい",
+            "いいえ",
+            "さようなら"
+          ],
+          "answer": "はい"
+        },
+        {
+          "id": "jg1q7",
+          "type": "select_meaning",
+          "prompt": "What does \"いいえ\" mean?",
+          "options": [
+            "no",
+            "yes",
+            "please",
+            "hello"
+          ],
+          "answer": "no"
+        },
+        {
+          "id": "jg1q8",
+          "type": "translate_wordbank",
+          "direction": "to_source",
+          "prompt": "Translate this sentence",
+          "source": "ありがとうございます",
+          "wordBank": [
+            "Thank",
+            "you",
+            "very",
+            "much",
+            "hello",
+            "goodbye"
+          ],
+          "answer": "Thank you very much",
+          "acceptedAnswers": [
+            "Thank you very much",
+            "Thank you",
+            "Thanks"
+          ]
+        },
+        {
+          "id": "jg1q9",
+          "type": "type_answer",
+          "direction": "to_target",
+          "prompt": "Write \"hello\" in Japanese",
+          "source": "hello",
+          "answer": "こんにちは",
+          "acceptedAnswers": [
+            "こんにちは",
+            "konnichiwa",
+            "konnichiha"
+          ]
+        },
+        {
+          "id": "jg1q10",
+          "type": "select_meaning",
+          "prompt": "Which word do you say when you leave?",
+          "options": [
+            "さようなら",
+            "おはよう",
+            "こんにちは",
+            "ありがとう"
+          ],
+          "answer": "さようなら"
+        }
+      ]
+    },
+    {
+      "id": "ja-food-drink",
+      "unit": 1,
+      "order": 4,
+      "title": "Food & Drink",
+      "description": "More things to eat and drink",
+      "icon": "🍵",
+      "questions": [
+        {
+          "id": "jf1q1",
+          "type": "select_image",
+          "prompt": "Which one is \"たまご\"?",
+          "options": [
+            {
+              "emoji": "🥚",
+              "label": "egg"
+            },
+            {
+              "emoji": "🍵",
+              "label": "tea"
+            },
+            {
+              "emoji": "🍚",
+              "label": "rice"
+            },
+            {
+              "emoji": "☕",
+              "label": "coffee"
+            }
+          ],
+          "answer": "egg"
+        },
+        {
+          "id": "jf1q2",
+          "type": "select_image",
+          "prompt": "Which one is \"おちゃ\"?",
+          "options": [
+            {
+              "emoji": "🍵",
+              "label": "tea"
+            },
+            {
+              "emoji": "🍚",
+              "label": "rice"
+            },
+            {
+              "emoji": "🐟",
+              "label": "fish"
+            },
+            {
+              "emoji": "🥚",
+              "label": "egg"
+            }
+          ],
+          "answer": "tea"
+        },
+        {
+          "id": "jf1q3",
+          "type": "match_pairs",
+          "prompt": "Tap the matching pairs",
+          "pairs": [
+            {
+              "left": "たまご",
+              "right": "egg"
+            },
+            {
+              "left": "おちゃ",
+              "right": "tea"
+            },
+            {
+              "left": "ごはん",
+              "right": "rice"
+            },
+            {
+              "left": "さかな",
+              "right": "fish"
+            }
+          ]
+        },
+        {
+          "id": "jf1q4",
+          "type": "select_meaning",
+          "prompt": "What does \"コーヒー\" mean?",
+          "options": [
+            "coffee",
+            "tea",
+            "milk",
+            "water"
+          ],
+          "answer": "coffee"
+        },
+        {
+          "id": "jf1q5",
+          "type": "translate_wordbank",
+          "direction": "to_target",
+          "prompt": "Translate this sentence",
+          "source": "I drink tea.",
+          "wordBank": [
+            "わたし",
+            "は",
+            "おちゃ",
+            "を",
+            "のみます",
+            "たべます",
+            "コーヒー"
+          ],
+          "answer": "わたしはおちゃをのみます。",
+          "acceptedAnswers": [
+            "わたしはおちゃをのみます。",
+            "おちゃをのみます。"
+          ]
+        },
+        {
+          "id": "jf1q6",
+          "type": "listen_type",
+          "prompt": "Type what you hear",
+          "audioText": "ごはん",
+          "answer": "ごはん",
+          "acceptedAnswers": [
+            "ごはん",
+            "gohan"
+          ]
+        },
+        {
+          "id": "jf1q7",
+          "type": "fill_blank",
+          "prompt": "Complete the sentence",
+          "context": "You eat fish.",
+          "sentence": "あなたは___をたべます。",
+          "sentenceRomaji": "anata wa ___ o tabemasu.",
+          "options": [
+            "さかな",
+            "おちゃ",
+            "のみます"
+          ],
+          "answer": "さかな"
+        },
+        {
+          "id": "jf1q8",
+          "type": "translate_wordbank",
+          "direction": "to_source",
+          "prompt": "Translate this sentence",
+          "source": "わたしはたまごをたべます。",
+          "wordBank": [
+            "I",
+            "eat",
+            "an",
+            "egg",
+            "drink",
+            "tea"
+          ],
+          "answer": "I eat an egg",
+          "acceptedAnswers": [
+            "I eat an egg",
+            "I eat eggs",
+            "I eat egg"
+          ]
+        },
+        {
+          "id": "jf1q9",
+          "type": "type_answer",
+          "direction": "to_target",
+          "prompt": "Write \"coffee\" in Japanese",
+          "source": "coffee",
+          "answer": "コーヒー",
+          "acceptedAnswers": [
+            "コーヒー",
+            "こーひー",
+            "koohii",
+            "kouhii",
+            "kohi",
+            "koohi"
+          ]
+        },
+        {
+          "id": "jf1q10",
+          "type": "select_meaning",
+          "prompt": "What does \"あなたはおちゃをのみます。\" mean?",
+          "options": [
+            "You drink tea.",
+            "I drink tea.",
+            "You eat rice.",
+            "I eat fish."
+          ],
+          "answer": "You drink tea."
+        }
+      ]
+    },
+    {
+      "id": "ja-family-people",
+      "unit": 1,
+      "order": 5,
+      "title": "Family & People",
+      "description": "Talk about people around you",
+      "icon": "👨‍👩‍👧",
+      "questions": [
+        {
+          "id": "jp1q1",
+          "type": "select_meaning",
+          "prompt": "What does \"おかあさん\" mean?",
+          "options": [
+            "mother",
+            "father",
+            "friend",
+            "girl"
+          ],
+          "answer": "mother"
+        },
+        {
+          "id": "jp1q2",
+          "type": "select_meaning",
+          "prompt": "How do you say \"father\"?",
+          "options": [
+            "おかあさん",
+            "ともだち",
+            "おとうさん",
+            "おとこのこ"
+          ],
+          "answer": "おとうさん"
+        },
+        {
+          "id": "jp1q3",
+          "type": "match_pairs",
+          "prompt": "Tap the matching pairs",
+          "pairs": [
+            {
+              "left": "おとこのこ",
+              "right": "boy"
+            },
+            {
+              "left": "おんなのこ",
+              "right": "girl"
+            },
+            {
+              "left": "おかあさん",
+              "right": "mother"
+            },
+            {
+              "left": "ともだち",
+              "right": "friend"
+            }
+          ]
+        },
+        {
+          "id": "jp1q4",
+          "type": "translate_wordbank",
+          "direction": "to_target",
+          "prompt": "Translate this sentence",
+          "source": "The boy eats bread.",
+          "wordBank": [
+            "おとこのこ",
+            "は",
+            "パン",
+            "を",
+            "たべます",
+            "おんなのこ",
+            "のみます"
+          ],
+          "answer": "おとこのこはパンをたべます。",
+          "acceptedAnswers": [
+            "おとこのこはパンをたべます。"
+          ]
+        },
+        {
+          "id": "jp1q5",
+          "type": "listen_type",
+          "prompt": "Type what you hear",
+          "audioText": "おんなのこ",
+          "answer": "おんなのこ",
+          "acceptedAnswers": [
+            "おんなのこ",
+            "onnanoko"
+          ]
+        },
+        {
+          "id": "jp1q6",
+          "type": "fill_blank",
+          "prompt": "Complete the sentence",
+          "context": "The girl drinks water.",
+          "sentence": "___はみずをのみます。",
+          "sentenceRomaji": "___ wa mizu o nomimasu.",
+          "options": [
+            "おんなのこ",
+            "パン",
+            "たべます"
+          ],
+          "answer": "おんなのこ"
+        },
+        {
+          "id": "jp1q7",
+          "type": "translate_wordbank",
+          "direction": "to_source",
+          "prompt": "Translate this sentence",
+          "source": "おかあさんはおちゃをのみます。",
+          "wordBank": [
+            "Mother",
+            "drinks",
+            "tea",
+            "eats",
+            "rice",
+            "father"
+          ],
+          "answer": "Mother drinks tea",
+          "acceptedAnswers": [
+            "Mother drinks tea",
+            "The mother drinks tea",
+            "My mother drinks tea",
+            "Mom drinks tea"
+          ]
+        },
+        {
+          "id": "jp1q8",
+          "type": "select_meaning",
+          "prompt": "What does \"ともだち\" mean?",
+          "options": [
+            "friend",
+            "brother",
+            "boy",
+            "teacher"
+          ],
+          "answer": "friend"
+        },
+        {
+          "id": "jp1q9",
+          "type": "type_answer",
+          "direction": "to_target",
+          "prompt": "Write \"father\" in Japanese",
+          "source": "father",
+          "answer": "おとうさん",
+          "acceptedAnswers": [
+            "おとうさん",
+            "otousan",
+            "otosan"
+          ]
+        },
+        {
+          "id": "jp1q10",
+          "type": "translate_wordbank",
+          "direction": "to_source",
+          "prompt": "Translate this sentence",
+          "source": "おとうさんはごはんをたべます。",
+          "wordBank": [
+            "Father",
+            "eats",
+            "rice",
+            "drinks",
+            "tea",
+            "mother"
+          ],
+          "answer": "Father eats rice",
+          "acceptedAnswers": [
+            "Father eats rice",
+            "The father eats rice",
+            "My father eats rice",
+            "Dad eats rice"
+          ]
+        }
+      ]
+    }
+  ]
+}

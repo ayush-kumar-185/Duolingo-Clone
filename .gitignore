@@ -1,0 +1,25 @@
+# Node / Frontend
+node_modules/
+.next/
+out/
+build/
+.env*.local
+
+# Python / Backend
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+.pytest_cache/
+
+# Databases
+*.sqlite3
+*.db
+backend/database.db
+
+# Temporary / OS Files
+.DS_Store
+Thumbs.db
+patch_glossary.py
