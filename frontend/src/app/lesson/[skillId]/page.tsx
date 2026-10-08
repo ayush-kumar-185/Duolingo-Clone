@@ -42,7 +42,8 @@ function LessonContent() {
   }, [user]);
 
   useEffect(() => {
-    fetch(`http://localhost:8000/api/skills/${skillId}/lesson`, {
+    const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+    fetch(`${API_URL}/api/skills/${skillId}/lesson`, {
       headers: { "x-username": useUserStore.getState().activeUsername }
     })
       .then((res) => res.json())
@@ -144,7 +145,8 @@ function LessonContent() {
 
     if (currentIndex + 1 >= exercises.length && hearts > 0) {
       // Finish lesson
-      await fetch("http://localhost:8000/api/progress", {
+      const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+      await fetch(`${API_URL}/api/progress`, {
         method: "POST",
         headers: { 
           "Content-Type": "application/json",

@@ -27,7 +27,8 @@ export const useUserStore = create<UserStore>((set, get) => ({
   fetchUser: async () => {
     try {
       const username = get().activeUsername;
-      const res = await fetch('http://localhost:8000/api/user', {
+      const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+      const res = await fetch(`${API_URL}/api/user`, {
         headers: { 'x-username': username }
       });
       if (res.ok) {
