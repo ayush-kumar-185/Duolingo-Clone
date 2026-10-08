@@ -237,7 +237,7 @@ function LessonContent() {
               return (
                 <button
                   key={text}
-                  onClick={() => setFeedback("none") || setSelectedAnswer(text)}
+                  onClick={() => { setFeedback("none"); setSelectedAnswer(text); }}
                   disabled={feedback !== "none"}
                   className={`w-full p-6 rounded-2xl border-2 border-b-[6px] flex flex-row items-center justify-start gap-8 transition-all active:border-b-2 active:translate-y-[4px] ${
                     selectedAnswer === text 
@@ -258,7 +258,7 @@ function LessonContent() {
             {parsedOptions.map((opt) => (
               <button
                 key={opt}
-                onClick={() => setFeedback("none") || setSelectedAnswer(opt)}
+                onClick={() => { setFeedback("none"); setSelectedAnswer(opt); }}
                 disabled={feedback !== "none"}
                 className={`w-full p-4 rounded-2xl border-2 border-b-[6px] text-lg font-bold text-left transition-all active:border-b-2 active:translate-y-[4px] ${
                   selectedAnswer === opt 
